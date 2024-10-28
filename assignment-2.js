@@ -1,11 +1,11 @@
 // 1) ​Console this star pattern
 for (let i=1; i<=5; i++) {
-    let gap = "";
+    let gap="";
     for (let j=i; j<5; j++) {
-        gap += " ";
+        gap +=" ";
     }
     for (let k=0; k<i; k++) {
-        gap += "* ";
+        gap +="* ";
     }
     console.log(gap);
 }
@@ -22,7 +22,7 @@ items.map(i => {
                 console.log(`it is number ${i}`);
                 break;
         case 'boolean':
-            console.log(`its is charater ${i}`);
+            console.log(`its is boolen charater ${i}`);
             break;
         default:
             console.log(`type unfounded iteam charater${i}`);
@@ -44,7 +44,7 @@ closure();
 
 //4)Use constructor method to console all elements of the passed array. (the array will be passed to the constructor method)
 const array12=[1,2,3,5]
-var aswan=new Function("array12","array12.forEach(i =>{console.log(i);})");
+let aswan=new Function("array12","array12.forEach(i =>{console.log(i);})");
 aswan(array12);
 
 // 5)Create a self-invoking function to console you name.
