@@ -13,21 +13,22 @@ for (let i=1; i<=5; i++) {
 //2)['car', 1, 5, 'js', 'node js', 'mysql', 'sql' ] : Use switch statement inside a map function and 
 // console each item by using switch statement.
 const items = ['car', 1, 5, 'js', 'node js', 'mysql', 'sql'];
-items.map(i => {
-    switch(typeof i){
+const result=items.map(element=>{
+    switch(typeof element){
         case 'string':
-            console.log(`its srting ${i}`);
+            console.log(`its srting ${element}`);
             break;
         case 'number':
-                console.log(`it is number ${i}`);
+                console.log(`it is number ${element}`);
                 break;
         case 'boolean':
-            console.log(`its is boolen charater ${i}`);
+            console.log(`its is boolen charater ${element}`);
             break;
         default:
-            console.log(`type unfounded iteam charater${i}`);
+            console.log(`type unfounded iteam charater${element}`);
     };
-})
+});
+console.log(result);
 
 // 3)[1, 2, 3, 4.5, 6] : Write a closure function to delete indexes 5 and 2 of this array.
 function dele(){
